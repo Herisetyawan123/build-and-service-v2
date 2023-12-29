@@ -1,5 +1,5 @@
 import CardTeamProps from '../interfaces/props/card-team';
-import Rafi from '@/assets/profile-teams/rafik.jpeg';
+import Rafi from '@/assets/profile-teams/rafi.png';
 import Perdana from '@/assets/profile-teams/perdana.jpeg';
 import Heri from '@/assets/profile-teams/heri.jpg';
 import Faisal from '@/assets/profile-teams/faisal.jpg';
