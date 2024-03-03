@@ -1,0 +1,60 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "mysql"
+  url      = env("DATABASE_URL")
+}
+
+model Users {
+  id        Int      @id @default(autoincrement())
+  email     String?  @unique
+  password  String
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+}
+
+model ProjectCategories {
+  id        Int        @id @default(autoincrement())
+  name      String
+  Sources   Sources[]
+  Requests  Requests[]
+  createdAt DateTime   @default(now())
+  updatedAt DateTime   @updatedAt
+}
+
+model Sources {
+  id                  Int                @id @default(autoincrement())
+  title               String
+  project_category    ProjectCategories? @relation(fields: [project_category_id], references: [id], onDelete: SetNull, onUpdate: Cascade)
+  project_category_id Int?
+  price               String
+  description         String
+  createdAt           DateTime           @default(now())
+  updatedAt           DateTime           @updatedAt
+}
+
+model Requests {
+  id                  Int                @id @default(autoincrement())
+  name                String
+  phone_number        String
+  project_title       String
+  project_category    ProjectCategories? @relation(fields: [project_category_id], references: [id])
+  project_category_id Int?
+  min_price           String
+  max_price           String
+  description         String
+  status              Status             @default(PENDING)
+}
+
+enum Status {
+  PENDING
+  PAID
+  PROCESS
+  FINISH
+  CANCEL
+}
