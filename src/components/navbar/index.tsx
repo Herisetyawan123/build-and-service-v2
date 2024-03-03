@@ -23,19 +23,19 @@ export default function Navbar() {
               <div className="ml-20 space-x-20 hidden lg:block ">
                 <Link
                   href={"/"}
-                  className={`hover:text-green-800 ${pathname == "/" ? "text-green-600" : ""}`}
+                  className={`hover:text-green-800 ${pathname === "/" ? "text-green-600" : ""}`}
                 >
                   Home
                 </Link>
                 <Link
                   href={"/service"}
-                  className={`hover:text-green-800 ${pathname == "/service" ? "text-green-600" : ""}`}
+                  className={`hover:text-green-800 ${pathname === "/service" ? "text-green-600" : ""}`}
                 >
                   Service
                 </Link>
                 <Link
                   href={"/team"}
-                  className={`hover:text-green-800 ${pathname == "/team" ? "text-green-600" : ""}`}
+                  className={`hover:text-green-800 ${pathname === "/team" ? "text-green-600" : ""}`}
                 >
                   Our Teams
                 </Link>

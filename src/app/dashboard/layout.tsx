@@ -1,9 +1,7 @@
 import type { Metadata } from "next";
 import { Poppins } from "next/font/google";
 import SideNav from "@/app/ui/dashboard/sidebar";
-import { getServerSession } from "next-auth/next";
 import React from "react";
-import NotFound from "../ui/not-found";
 
 interface ProtectedLayoutProps {
   children: React.ReactNode | React.ReactNode[];

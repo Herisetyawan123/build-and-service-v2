@@ -4,5 +4,5 @@ export default interface InputFieldProps {
   placholder: string;
   value?: string;
   label: string;
-  onChange?: void;
+  onChange?: (e: Event) => void;
 }

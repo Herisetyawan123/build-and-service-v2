@@ -6,7 +6,7 @@ import { CreateSource } from "@/app/ui/source/buttons";
 import { lusitana } from "@/app/ui/fonts";
 // import { fetchInvoicesPages } from '@/app/lib/data';
 import { InvoicesTableSkeleton } from "@/app/ui/skeletons";
-import { Metadata } from "next";
+import { type Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "Source",
@@ -20,8 +20,8 @@ export default async function Page({
     page?: string;
   };
 }) {
-  const query = searchParams?.query || "";
-  const currentPage = Number(searchParams?.page) || 1;
+  const query = searchParams?.query ?? "";
+  const currentPage = Number(searchParams?.page) ?? 1;
 
   //   const totalPages = await fetchInvoicesPages(query);
   return (

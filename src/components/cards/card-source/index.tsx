@@ -1,7 +1,7 @@
 import Link from "next/link";
 import Image from "next/legacy/image";
 import { FaCartArrowDown } from "react-icons/fa";
-import CardSourceProps from "@/data/interfaces/props/card-source";
+import type CardSourceProps from "@/data/interfaces/props/card-source";
 
 const CardSource = ({ title, price, link }: CardSourceProps) => {
   return (

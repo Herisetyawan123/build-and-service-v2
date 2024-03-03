@@ -1,4 +1,4 @@
-import SectionServiceProps from "../interfaces/props/section-service";
+import type SectionServiceProps from "../interfaces/props/section-service";
 import webDevelopment from "@/assets/img/service-page-assets/web-development.jpg";
 import mobileDevelopment from "@/assets/img/service-page-assets/mobile-development.jpg";
 import sourceCode from "@/assets/img/service-page-assets/source-code.jpg";

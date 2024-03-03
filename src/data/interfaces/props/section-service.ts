@@ -1,4 +1,4 @@
-import { StaticImageData } from "next/legacy/image";
+import { type StaticImageData } from "next/legacy/image";
 
 export default interface SectionServiceProps {
   image: StaticImageData;

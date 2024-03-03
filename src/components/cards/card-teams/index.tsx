@@ -5,7 +5,7 @@ import Link from "next/link";
 import { FaInstagram, FaGithubAlt, FaLinkedin } from "react-icons/fa";
 import AOS from "aos";
 import "aos/dist/aos.css";
-import CardTeamProps from "@/data/interfaces/props/card-team";
+import type CardTeamProps from "@/data/interfaces/props/card-team";
 
 export default function CardTeam({
   name,

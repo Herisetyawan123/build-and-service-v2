@@ -2,13 +2,7 @@ import { Suspense } from "react";
 import CardWrapper from "@/app/ui/dashboard/card";
 import LatestInvoices from "@/app/ui/dashboard/latest-invoice";
 import { inter } from "@/app/ui/fonts";
-import {
-  RevenueChartSkeleton,
-  LatestInvoicesSkeleton,
-  CardsSkeleton,
-} from "@/app/ui/skeletons";
-import { getServerSession } from "next-auth/next";
-import Link from "next/link";
+import { LatestInvoicesSkeleton, CardsSkeleton } from "@/app/ui/skeletons";
 
 // import RevenueChart from '@/app/ui/dashboard/revenue-chart';
 // import { Card } from '@/app/ui/dashboard/cards';

@@ -1,4 +1,4 @@
-import { ListCardMarquee } from "../types/card-marquee-type";
+import { type ListCardMarquee } from "../types/card-marquee-type";
 
 const cardMarquee: ListCardMarquee = {
   item1: [

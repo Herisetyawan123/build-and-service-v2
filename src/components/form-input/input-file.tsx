@@ -1,4 +1,4 @@
-import InputFileProps from "@/data/interfaces/props/field-input-file";
+import type InputFileProps from "@/data/interfaces/props/field-input-file";
 
 export default function InputFile({
   label,

@@ -1,29 +1,25 @@
 "use client";
 
 import { lusitana } from "@/app/ui/fonts";
-import {
-  AtSymbolIcon,
-  KeyIcon,
-  ExclamationCircleIcon,
-} from "@heroicons/react/24/outline";
+import { AtSymbolIcon, KeyIcon } from "@heroicons/react/24/outline";
 import { ArrowRightIcon } from "@heroicons/react/20/solid";
 import { Button } from "@/app/ui/button";
-import { useFormState, useFormStatus } from "react-dom";
-import { NextPage } from "next";
+import { useFormStatus } from "react-dom";
+// import { NextPage } from "next";
 import { signIn } from "next-auth/react";
-import { FormEventHandler, useState } from "react";
+import { type FormEventHandler, useState } from "react";
 
 export default function LoginForm() {
   const [userInfo, setUserInfo] = useState({ email: "", password: "" });
-  const handleSubmit: FormEventHandler<HTMLFormElement> = async (e) => {
+  const handleSubmit: FormEventHandler<HTMLFormElement> = (e) => {
     e.preventDefault();
 
-    await signIn("credentials", {
+    signIn("credentials", {
       email: userInfo.email,
       password: userInfo.password,
       redirect: true,
       callbackUrl: "/dashboard",
-    });
+    }).catch((err) => console.log(err));
   };
 
   return (

@@ -1,9 +1,9 @@
-import { ListSelect } from "@/data/types/select-option";
+import { type ListSelect } from "@/data/types/select-option";
 
 export default interface SelectInputProps {
   name: string;
   placholder: string;
   label: string;
-  onChange?: void;
+  onChange?: (e: Event) => void;
   data: ListSelect[];
 }

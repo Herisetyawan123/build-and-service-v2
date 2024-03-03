@@ -3,8 +3,8 @@ import Swal from "sweetalert2";
 // import { DeleteSource } from '@/app/lib/actions';
 import { PencilIcon, PlusIcon, TrashIcon } from "@heroicons/react/24/outline";
 import Link from "next/link";
-import React, { FormEvent, FormEventHandler, useRef, useState } from "react";
-import { useFormState } from "react-dom";
+import React, { useRef } from "react";
+// import { useFormState } from "react-dom";
 // import Swal from 'sweetalert2/dist/sweetalert2.js'
 // import 'sweetalert2/src/sweetalert2.scss'
 
@@ -32,14 +32,11 @@ export function UpdateSource({ id }: { id: string }) {
 }
 
 export function DeleteSource({ id }: { id: string }) {
-  const initalState = {
-    message: null,
-  };
   const form = useRef<HTMLFormElement>(null);
   // const DeleteSourceWithId = DeleteSource.bind(null, id);
   //   const [state, formAction] = useFormState(DeleteSource, initalState);
   function confirmDelete(e: React.FormEvent<HTMLFormElement>) {
-    const formData = new FormData(e.currentTarget);
+    // new FormData(e.currentTarget);
     e.preventDefault();
     Swal.fire({
       title: "Are you sure?",
@@ -49,16 +46,18 @@ export function DeleteSource({ id }: { id: string }) {
       confirmButtonColor: "#3085d6",
       cancelButtonColor: "#d33",
       confirmButtonText: "Yes, delete it!",
-    }).then((result) => {
-      if (result.isConfirmed) {
-        // formAction(formData);
-        Swal.fire({
-          title: "Deleted!",
-          text: `source success deleted`,
-          icon: "success",
-        });
-      }
-    });
+    })
+      .then(async (result) => {
+        if (result.isConfirmed) {
+          // formAction(formData);
+          Swal.fire({
+            title: "Deleted!",
+            text: `source success deleted`,
+            icon: "success",
+          }).catch((err) => console.log(err));
+        }
+      })
+      .catch((err) => console.log(err));
   }
 
   return (

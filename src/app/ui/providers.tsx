@@ -6,7 +6,7 @@ interface ProviderProps {
   children: React.ReactNode | React.ReactNode[];
 }
 
-const Provider = ({ children }: ProviderProps) => {
+const Provider = ({ children }: ProviderProps): React.JSX.Element => {
   return <SessionProvider>{children}</SessionProvider>;
 };
 

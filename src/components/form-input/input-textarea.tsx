@@ -1,4 +1,4 @@
-import InputTextareaProps from "@/data/interfaces/props/field-input-textarea";
+import type InputTextareaProps from "@/data/interfaces/props/field-input-textarea";
 
 export default function InputTextArea({
   label,

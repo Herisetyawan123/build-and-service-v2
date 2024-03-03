@@ -4,5 +4,5 @@ export default interface InputTextareaProps {
   placholder: string;
   value?: string;
   label: string;
-  onChange?: void;
+  onChange?: (e: Event) => void;
 }

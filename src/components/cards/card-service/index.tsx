@@ -1,4 +1,4 @@
-import CardServiceProps from "@/data/interfaces/props/card-service";
+import type CardServiceProps from "@/data/interfaces/props/card-service";
 import Image from "next/legacy/image";
 import Link from "next/link";
 

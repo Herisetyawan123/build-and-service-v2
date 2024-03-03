@@ -1,4 +1,4 @@
-import CardTeamProps from "../interfaces/props/card-team";
+import type CardTeamProps from "../interfaces/props/card-team";
 import Rafi from "@/assets/profile-teams/rafi.png";
 import Perdana from "@/assets/profile-teams/perdana.jpeg";
 import Heri from "@/assets/profile-teams/heri.jpg";

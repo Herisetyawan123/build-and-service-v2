@@ -1,6 +1,6 @@
 import React from "react";
 import Image from "next/legacy/image";
-import CardMarqueeProps from "@/data/interfaces/props/card-marquee";
+import type CardMarqueeProps from "@/data/interfaces/props/card-marquee";
 
 export default function CardMarquee({
   image,

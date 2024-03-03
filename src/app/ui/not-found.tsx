@@ -1,8 +1,9 @@
 "use client";
 
 import Link from "next/link";
+import React from "react";
 
-export default function NotFound() {
+export default function NotFound(): React.JSX.Element {
   return (
     <div>
       <main className="h-screen w-full flex flex-col justify-center items-center bg-[#1A2238]">

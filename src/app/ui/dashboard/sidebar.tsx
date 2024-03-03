@@ -5,10 +5,15 @@ import NavLinks from "@/app/ui/dashboard/nav-links";
 import Image from "next/legacy/image";
 import Logo from "@/assets/logo.png";
 import { PowerIcon } from "@heroicons/react/24/outline";
-import { signOut, useSession } from "next-auth/react";
+import { signOut } from "next-auth/react";
 import React from "react";
 
 export default function SideNav() {
+  const handleSignOut = () => {
+    signOut({ callbackUrl: "/", redirect: true }).catch((err) =>
+      console.log(err)
+    );
+  };
   return (
     <div className="flex h-full flex-col px-3 py-4 md:px-2">
       <Link
@@ -23,7 +28,7 @@ export default function SideNav() {
         <NavLinks />
         <div className="hidden h-auto w-full grow rounded-md bg-gray-50 md:block"></div>
         <button
-          onClick={() => signOut({ callbackUrl: "/", redirect: true })}
+          onClick={handleSignOut}
           className="flex h-[48px] w-full grow items-center justify-center gap-2 rounded-md bg-green-100 p-3 text-sm font-medium hover:bg-green-100 hover:text-green-600 md:flex-none md:justify-start md:p-2 md:px-3"
         >
           <PowerIcon className="w-6" />

@@ -3,7 +3,7 @@ import { useEffect, useId } from "react";
 import { FaAngleDown } from "react-icons/fa";
 import AOS from "aos";
 import "aos/dist/aos.css";
-import FaqAccordionProps from "@/data/interfaces/props/faq-accordion";
+import type FaqAccordionProps from "@/data/interfaces/props/faq-accordion";
 
 export default function FaqAccordion({
   title,

@@ -1,12 +1,5 @@
-import NextAuth, {
-  Account,
-  Awaitable,
-  DefaultSession,
-  Profile,
-  Session,
-  User,
-} from "next-auth";
-import { JWT, JWTDecodeParams } from "next-auth/jwt";
+import NextAuth, { type Awaitable, type Session, type User } from "next-auth";
+import { type JWT } from "next-auth/jwt";
 import CredentialsProvider from "next-auth/providers/credentials";
 
 export interface AdapterUser extends User {
@@ -31,8 +24,8 @@ const handler = NextAuth({
       },
       authorize(credentials, req): Awaitable<AdapterUser | null> {
         if (
-          credentials?.email == "owner@mail.com" &&
-          credentials.password == "123456"
+          credentials?.email === "owner@mail.com" &&
+          credentials.password === "123456"
         ) {
           return {
             id: "1",
@@ -64,7 +57,7 @@ const handler = NextAuth({
         return { ...token, ...user };
       }
 
-      if (token?.accessTokenExpires) {
+      if (token.accessTokenExpires !== undefined) {
         if (Date.now() / 1000 < token?.accessTokenExpires)
           return { ...token, ...user };
       }

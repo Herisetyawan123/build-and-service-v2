@@ -1,9 +1,3 @@
-import Image from "next/image";
-import { UpdateSource, DeleteSource } from "@/app/ui/source/buttons";
-// import InvoiceStatus from '@/app/ui/invoices/status';
-// import { formatDateToLocal, formatCurrency } from '@/app/lib/utils';
-// import { fetchFilteredInvoices } from '@/app/lib/data';
-
 export default async function SourceTable({
   query,
   currentPage,

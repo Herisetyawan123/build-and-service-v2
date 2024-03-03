@@ -1,4 +1,4 @@
-import FaqAccordionProps from "../interfaces/props/faq-accordion";
+import type FaqAccordionProps from "../interfaces/props/faq-accordion";
 
 const faqAccordion: FaqAccordionProps[] = [
   {

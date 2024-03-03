@@ -1,5 +1,5 @@
 import Image from "next/legacy/image";
-import SectionServiceProps from "@/data/interfaces/props/section-service";
+import type SectionServiceProps from "@/data/interfaces/props/section-service";
 
 export default function SectionService({
   image,

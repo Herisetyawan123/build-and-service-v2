@@ -1,4 +1,4 @@
-import { ListSelect } from "../types/select-option";
+import { type ListSelect } from "../types/select-option";
 
 export const dataSelect: ListSelect[] = [
   {

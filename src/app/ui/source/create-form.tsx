@@ -1,12 +1,11 @@
 "use client";
 // import { CustomerField } from '@/app/lib/definitions';
 import Link from "next/link";
-import { ToastContainer, toast } from "react-toastify";
+import { ToastContainer } from "react-toastify";
 import {
   CheckIcon,
   ClockIcon,
   CurrencyDollarIcon,
-  UserCircleIcon,
   DocumentTextIcon,
   CodeBracketSquareIcon,
   BriefcaseIcon,
@@ -15,9 +14,7 @@ import { Button } from "@/app/ui/button";
 // import { createInvoice } from '@/app/lib/actions';
 import "react-toastify/dist/ReactToastify.css";
 import React from "react";
-import { revalidatePath } from "next/cache";
-import { redirect } from "next/navigation";
-import { Metadata } from "next";
+import { type Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "Create Source",
