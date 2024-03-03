@@ -11,9 +11,4 @@ module.exports = {
   },
   plugins: ["react"],
   rules: {},
-  setting: {
-    react: {
-      version: "latest",
-    },
-  },
 };
