@@ -18,15 +18,14 @@ export default function LoginForm() {
   const handleSubmit: FormEventHandler<HTMLFormElement> = async (e) => {
     e.preventDefault();
 
-    const res = await signIn("credentials", {
+    await signIn("credentials", {
       email: userInfo.email,
       password: userInfo.password,
       redirect: true,
       callbackUrl: "/dashboard",
     });
-
-    console.log(res);
   };
+
   return (
     <form onSubmit={handleSubmit} className="space-y-3">
       <div className="flex-1 rounded-lg bg-gray-50 px-6 pb-4 pt-8">

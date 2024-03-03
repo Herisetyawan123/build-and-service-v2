@@ -7,7 +7,6 @@ import {
   LatestInvoicesSkeleton,
   CardsSkeleton,
 } from "@/app/ui/skeletons";
-import { authOptions } from "@/app/api/auth/[...nextauth]/route";
 import { getServerSession } from "next-auth/next";
 import Link from "next/link";
 
@@ -30,21 +29,9 @@ export default async function Page() {
   //   numberOfInvoices,
   //   numberOfCustomers,
   // } = await fetchCardData();
-  const session = await getServerSession(authOptions);
-  console.log(session?.user);
+
   return (
     <main>
-      {session && session.user?.email ? (
-        <>
-          <p>
-            <b>Signed in as {session.user?.email}</b>
-          </p>
-        </>
-      ) : (
-        <>
-          <p>Belum login</p>
-        </>
-      )}
       <h1 className={`${inter.className} mb-4 text-xl md:text-2xl`}>
         Dashboard
       </h1>

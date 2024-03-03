@@ -3,7 +3,6 @@ import { Poppins } from "next/font/google";
 import SideNav from "@/app/ui/dashboard/sidebar";
 import { getServerSession } from "next-auth/next";
 import React from "react";
-import { authOptions } from "../api/auth/[...nextauth]/route";
 import NotFound from "../ui/not-found";
 
 interface ProtectedLayoutProps {
@@ -17,11 +16,6 @@ export const metadata: Metadata = {
 };
 
 const Layout = async ({ children }: ProtectedLayoutProps) => {
-  const session = await getServerSession(authOptions);
-  if (!session || !session.user?.email) {
-    return <NotFound />;
-  }
-
   return (
     <>
       <div
