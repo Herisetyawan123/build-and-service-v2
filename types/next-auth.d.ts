@@ -1,4 +1,4 @@
-import { Session } from "inspector";
+import { type Session } from "inspector";
 
 declare module "next-auth" {
   /**

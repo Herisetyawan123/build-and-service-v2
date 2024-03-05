@@ -8,9 +8,6 @@ export interface AdapterUser extends User {
 }
 
 const handler = NextAuth({
-  jwt: {
-    secret: "asdasdasd",
-  },
   providers: [
     CredentialsProvider({
       name: "credentials",
@@ -36,33 +33,17 @@ const handler = NextAuth({
       },
     }),
   ],
+  session: {
+    strategy: "jwt",
+  },
+  secret: process.env.NEXTAUTH_SECRET ?? "HALOGAIS",
   callbacks: {
-    async session({
-      session,
-      token,
-      user,
-    }: {
-      session: Session;
-      token: JWT;
-      user: AdapterUser;
-    }) {
+    async session({ session, token }: { session: Session; token: JWT }) {
       session.user = {
-        email: user.email,
-        name: user.name,
+        email: token.email,
+        name: token.name,
       };
       return session;
-    },
-    async jwt({ token, user }) {
-      if (user.email) {
-        return { ...token, ...user };
-      }
-
-      if (token.accessTokenExpires !== undefined) {
-        if (Date.now() / 1000 < token?.accessTokenExpires)
-          return { ...token, ...user };
-      }
-
-      return { ...token, ...user };
     },
   },
   pages: {
