@@ -13,12 +13,14 @@ npm run check-types ||
 )
 
 # Check Prettier standards
-npm run check-format && git add -A ||
+npm run check-format ||
 (
     echo '🤢🤮🤢🤮 Its F**KING RAW - Your styling looks disgusting. 🤢🤮🤢🤮
             Prettier Check Failed. Run npm run format, add changes and try commit again.';
     npm run format;
 )
+
+git add -A
 
 # If everything passes... Now we can commit
 # echo '🤔🤔🤔🤔... Alright... Code looks good to me... Trying to build now. 🤔🤔🤔🤔'
