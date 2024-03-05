@@ -20,6 +20,9 @@ import CardMarquee from "@/components/cards/card-marquee";
 export default function Home() {
 
 
+
+
+  
   useEffect(() => {
     AOS.init({
       duration: 800
