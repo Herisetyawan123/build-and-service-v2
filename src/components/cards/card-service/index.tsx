@@ -1,6 +1,6 @@
-import type CardServiceProps from "@/data/interfaces/props/card-service";
-import Image from "next/legacy/image";
-import Link from "next/link";
+import type CardServiceProps from '@/data/interfaces/props/card-service';
+import Image from 'next/legacy/image';
+import Link from 'next/link';
 
 const CardService = ({ title, image }: CardServiceProps) => {
   return (
@@ -13,7 +13,7 @@ const CardService = ({ title, image }: CardServiceProps) => {
       </div>
       <div className="w-full flex flex-col">
         <Link
-          href={"/service"}
+          href={'/service'}
           className="w-full text-center bg-green-600 hover:bg-green-800 text-white rounded-md py-2"
         >
           More

@@ -1,14 +1,14 @@
-"use client";
-import { useEffect } from "react";
-import AOS from "aos";
-import "aos/dist/aos.css";
-import InputText from "@/components/form-input/input-text";
-import InputTextArea from "@/components/form-input/input-textarea";
+'use client';
+import { useEffect } from 'react';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+import InputText from '@/components/form-input/input-text';
+import InputTextArea from '@/components/form-input/input-textarea';
 
 export default function ContactUs() {
   useEffect(() => {
     AOS.init({
-      duration: 800,
+      duration: 800
     });
   }, []);
 

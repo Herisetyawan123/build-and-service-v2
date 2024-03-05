@@ -1,26 +1,26 @@
-"use client";
-import React, { useEffect } from "react";
-import Marquee from "react-fast-marquee";
-import AOS from "aos";
-import "aos/dist/aos.css";
-import CardSource from "@/components/cards/card-source";
-import Navbar from "@/components/navbar";
-import CardService from "@/components/cards/card-service";
-import FaqAccordion from "@/components/accordion/faq-accordion";
-import Footer from "@/components/footer";
-import WebDesign from "@/assets/img/web.png";
-import Mobile from "@/assets/img/mobile.png";
-import Source from "@/assets/img/source.png";
-import Abstrak from "@/assets/bg/abstrak.svg";
-import ContactUs from "@/components/sections/contact-us";
-import faqAccordion from "@/data/static/faq-accordion";
-import cardMarquee from "@/data/static/card-marquee";
-import CardMarquee from "@/components/cards/card-marquee";
+'use client';
+import React, { useEffect } from 'react';
+import Marquee from 'react-fast-marquee';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+import CardSource from '@/components/cards/card-source';
+import Navbar from '@/components/navbar';
+import CardService from '@/components/cards/card-service';
+import FaqAccordion from '@/components/accordion/faq-accordion';
+import Footer from '@/components/footer';
+import WebDesign from '@/assets/img/web.png';
+import Mobile from '@/assets/img/mobile.png';
+import Source from '@/assets/img/source.png';
+import Abstrak from '@/assets/bg/abstrak.svg';
+import ContactUs from '@/components/sections/contact-us';
+import faqAccordion from '@/data/static/faq-accordion';
+import cardMarquee from '@/data/static/card-marquee';
+import CardMarquee from '@/components/cards/card-marquee';
 
 export default function Home() {
   useEffect(() => {
     AOS.init({
-      duration: 800,
+      duration: 800
     });
   }, []);
   return (

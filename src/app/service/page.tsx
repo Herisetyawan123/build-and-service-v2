@@ -1,19 +1,19 @@
-"use client";
-import Link from "next/link";
-import Image from "next/legacy/image";
-import React, { useEffect } from "react";
-import AOS from "aos";
-import "aos/dist/aos.css";
-import Navbar from "@/components/navbar";
-import SectionService from "@/components/sections/service";
-import serviceData from "@/data/static/service";
-import bannerService from "@/assets/img/service-page-assets/banner-service.jpg";
-import Footer from "@/components/footer";
+'use client';
+import Link from 'next/link';
+import Image from 'next/legacy/image';
+import React, { useEffect } from 'react';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+import Navbar from '@/components/navbar';
+import SectionService from '@/components/sections/service';
+import serviceData from '@/data/static/service';
+import bannerService from '@/assets/img/service-page-assets/banner-service.jpg';
+import Footer from '@/components/footer';
 
 export default function Service() {
   useEffect(() => {
     AOS.init({
-      duration: 800,
+      duration: 800
     });
   }, []);
   return (

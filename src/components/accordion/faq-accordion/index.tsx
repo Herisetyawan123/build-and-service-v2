@@ -1,26 +1,26 @@
-"use client";
-import { useEffect, useId } from "react";
-import { FaAngleDown } from "react-icons/fa";
-import AOS from "aos";
-import "aos/dist/aos.css";
-import type FaqAccordionProps from "@/data/interfaces/props/faq-accordion";
+'use client';
+import { useEffect, useId } from 'react';
+import { FaAngleDown } from 'react-icons/fa';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+import type FaqAccordionProps from '@/data/interfaces/props/faq-accordion';
 
 export default function FaqAccordion({
   title,
-  description,
+  description
 }: FaqAccordionProps) {
   const id = useId();
 
   const openTab = () => {
-    const logoDown = document.getElementById("logo-down-" + id);
-    const answerDown = document.getElementById("answer-faq-" + id);
-    logoDown?.classList.toggle("rotate-180");
-    answerDown?.classList.toggle("hidden");
+    const logoDown = document.getElementById('logo-down-' + id);
+    const answerDown = document.getElementById('answer-faq-' + id);
+    logoDown?.classList.toggle('rotate-180');
+    answerDown?.classList.toggle('hidden');
   };
 
   useEffect(() => {
     AOS.init({
-      duration: 800,
+      duration: 800
     });
   }, []);
 

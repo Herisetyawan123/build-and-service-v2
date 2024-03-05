@@ -1,16 +1,16 @@
-"use client";
-import React, { useEffect } from "react";
-import AOS from "aos";
-import "aos/dist/aos.css";
-import teamData from "@/data/static/team";
-import Navbar from "@/components/navbar";
-import CardTeam from "@/components/cards/card-teams";
-import Footer from "@/components/footer";
+'use client';
+import React, { useEffect } from 'react';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+import teamData from '@/data/static/team';
+import Navbar from '@/components/navbar';
+import CardTeam from '@/components/cards/card-teams';
+import Footer from '@/components/footer';
 
 export default function Team() {
   useEffect(() => {
     AOS.init({
-      duration: 800,
+      duration: 800
     });
   }, []);
   return (

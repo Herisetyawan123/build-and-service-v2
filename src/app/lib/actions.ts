@@ -1,5 +1,5 @@
 /* eslint-disable @typescript-eslint/no-unused-vars */
-import AuthError from "next-auth";
+import AuthError from 'next-auth';
 // import { signIn } from "../../../auth";
 
 // // ...

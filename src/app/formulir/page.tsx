@@ -1,19 +1,19 @@
-"use client";
-import React, { useEffect } from "react";
-import AOS from "aos";
-import "aos/dist/aos.css";
-import { dataSelect } from "@/data/static/select-type-project";
-import Navbar from "@/components/navbar";
-import InputText from "@/components/form-input/input-text";
-import InputSelect from "@/components/form-input/input-select";
-import InputTextArea from "@/components/form-input/input-textarea";
-import InputFile from "@/components/form-input/input-file";
-import Footer from "@/components/footer";
+'use client';
+import React, { useEffect } from 'react';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+import { dataSelect } from '@/data/static/select-type-project';
+import Navbar from '@/components/navbar';
+import InputText from '@/components/form-input/input-text';
+import InputSelect from '@/components/form-input/input-select';
+import InputTextArea from '@/components/form-input/input-textarea';
+import InputFile from '@/components/form-input/input-file';
+import Footer from '@/components/footer';
 
 export default function Formulir() {
   useEffect(() => {
     AOS.init({
-      duration: 800,
+      duration: 800
     });
   }, []);
   return (

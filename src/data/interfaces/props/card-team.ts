@@ -1,4 +1,4 @@
-import { type StaticImageData } from "next/legacy/image";
+import { type StaticImageData } from 'next/legacy/image';
 
 interface CardTeamProps {
   image: StaticImageData;

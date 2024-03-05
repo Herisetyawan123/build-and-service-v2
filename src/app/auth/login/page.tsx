@@ -1,10 +1,10 @@
-import LoginForm from "@/app/ui/login-form";
-import { type Metadata } from "next";
-import Image from "next/legacy/image";
-import Logo from "@/assets/logo.png";
+import LoginForm from '@/app/ui/login-form';
+import { type Metadata } from 'next';
+import Image from 'next/legacy/image';
+import Logo from '@/assets/logo.png';
 
 export const metadata: Metadata = {
-  title: "login",
+  title: 'login'
 };
 
 export default function LoginPage() {

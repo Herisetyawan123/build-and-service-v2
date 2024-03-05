@@ -1,16 +1,16 @@
-"use client";
+'use client';
 
-import Link from "next/link";
-import NavLinks from "@/app/ui/dashboard/nav-links";
-import Image from "next/legacy/image";
-import Logo from "@/assets/logo.png";
-import { PowerIcon } from "@heroicons/react/24/outline";
-import { signOut } from "next-auth/react";
-import React from "react";
+import Link from 'next/link';
+import NavLinks from '@/app/ui/dashboard/nav-links';
+import Image from 'next/legacy/image';
+import Logo from '@/assets/logo.png';
+import { PowerIcon } from '@heroicons/react/24/outline';
+import { signOut } from 'next-auth/react';
+import React from 'react';
 
 export default function SideNav() {
   const handleSignOut = () => {
-    signOut({ callbackUrl: "/", redirect: true }).catch((err) =>
+    signOut({ callbackUrl: '/', redirect: true }).catch((err) =>
       console.log(err)
     );
   };

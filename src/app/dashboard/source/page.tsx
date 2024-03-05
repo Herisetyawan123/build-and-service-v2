@@ -1,26 +1,26 @@
-import { Suspense } from "react";
+import { Suspense } from 'react';
 // import Pagination from '@/app/ui/invoices/pagination';
-import Table from "@/app/ui/source/table";
-import Search from "@/app/ui/search";
-import { CreateSource } from "@/app/ui/source/buttons";
-import { lusitana } from "@/app/ui/fonts";
+import Table from '@/app/ui/source/table';
+import Search from '@/app/ui/search';
+import { CreateSource } from '@/app/ui/source/buttons';
+import { lusitana } from '@/app/ui/fonts';
 // import { fetchInvoicesPages } from '@/app/lib/data';
-import { InvoicesTableSkeleton } from "@/app/ui/skeletons";
-import { type Metadata } from "next";
+import { InvoicesTableSkeleton } from '@/app/ui/skeletons';
+import { type Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: "Source",
+  title: 'Source'
 };
 
 export default async function Page({
-  searchParams,
+  searchParams
 }: {
   searchParams?: {
     query?: string;
     page?: string;
   };
 }) {
-  const query = searchParams?.query ?? "";
+  const query = searchParams?.query ?? '';
   const currentPage = Number(searchParams?.page) ?? 1;
 
   //   const totalPages = await fetchInvoicesPages(query);

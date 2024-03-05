@@ -1,4 +1,4 @@
-import type InputFieldProps from "@/data/interfaces/props/field-input-text";
+import type InputFieldProps from '@/data/interfaces/props/field-input-text';
 
 export default function InputText({
   label,
@@ -6,7 +6,7 @@ export default function InputText({
   name,
   placholder,
   value,
-  onChange,
+  onChange
 }: InputFieldProps) {
   return (
     <div className="mb-6">

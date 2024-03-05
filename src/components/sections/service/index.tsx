@@ -1,10 +1,10 @@
-import Image from "next/legacy/image";
-import type SectionServiceProps from "@/data/interfaces/props/section-service";
+import Image from 'next/legacy/image';
+import type SectionServiceProps from '@/data/interfaces/props/section-service';
 
 export default function SectionService({
   image,
   title,
-  description,
+  description
 }: SectionServiceProps) {
   return (
     <section className="max-w-7xl mx-auto mb-36">

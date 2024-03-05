@@ -1,11 +1,11 @@
-import React from "react";
-import Image from "next/legacy/image";
-import type CardMarqueeProps from "@/data/interfaces/props/card-marquee";
+import React from 'react';
+import Image from 'next/legacy/image';
+import type CardMarqueeProps from '@/data/interfaces/props/card-marquee';
 
 export default function CardMarquee({
   image,
   name,
-  description,
+  description
 }: CardMarqueeProps) {
   return (
     <div className="mr-20 w-[300px]">

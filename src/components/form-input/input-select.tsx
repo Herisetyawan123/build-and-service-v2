@@ -1,10 +1,10 @@
-import type SelectInputProps from "@/data/interfaces/props/field-input-select";
+import type SelectInputProps from '@/data/interfaces/props/field-input-select';
 
 export default function InputSelect({
   label,
   data,
   name,
-  onChange,
+  onChange
 }: SelectInputProps) {
   return (
     <div className="mb-6">

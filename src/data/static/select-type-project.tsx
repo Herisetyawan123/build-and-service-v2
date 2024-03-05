@@ -1,20 +1,20 @@
-import { type ListSelect } from "../types/select-option";
+import { type ListSelect } from '../types/select-option';
 
 export const dataSelect: ListSelect[] = [
   {
-    key: "Website",
-    value: "Website",
+    key: 'Website',
+    value: 'Website'
   },
   {
-    key: "Mobile",
-    value: "Mobile",
+    key: 'Mobile',
+    value: 'Mobile'
   },
   {
-    key: "GUI",
-    value: "GUI",
+    key: 'GUI',
+    value: 'GUI'
   },
   {
-    key: "Machine Learing",
-    value: "Machile Learning",
-  },
+    key: 'Machine Learing',
+    value: 'Machile Learning'
+  }
 ];

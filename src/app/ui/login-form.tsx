@@ -1,24 +1,24 @@
-"use client";
+'use client';
 
-import { lusitana } from "@/app/ui/fonts";
-import { AtSymbolIcon, KeyIcon } from "@heroicons/react/24/outline";
-import { ArrowRightIcon } from "@heroicons/react/20/solid";
-import { Button } from "@/app/ui/button";
-import { useFormStatus } from "react-dom";
+import { lusitana } from '@/app/ui/fonts';
+import { AtSymbolIcon, KeyIcon } from '@heroicons/react/24/outline';
+import { ArrowRightIcon } from '@heroicons/react/20/solid';
+import { Button } from '@/app/ui/button';
+import { useFormStatus } from 'react-dom';
 // import { NextPage } from "next";
-import { signIn } from "next-auth/react";
-import { type FormEventHandler, useState } from "react";
+import { signIn } from 'next-auth/react';
+import { type FormEventHandler, useState } from 'react';
 
 export default function LoginForm() {
-  const [userInfo, setUserInfo] = useState({ email: "", password: "" });
+  const [userInfo, setUserInfo] = useState({ email: '', password: '' });
   const handleSubmit: FormEventHandler<HTMLFormElement> = (e) => {
     e.preventDefault();
 
-    signIn("credentials", {
+    signIn('credentials', {
       email: userInfo.email,
       password: userInfo.password,
       redirect: true,
-      callbackUrl: "/dashboard",
+      callbackUrl: '/dashboard'
     }).catch((err) => console.log(err));
   };
 

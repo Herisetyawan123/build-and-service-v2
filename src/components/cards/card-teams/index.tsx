@@ -1,11 +1,11 @@
-"use client";
-import { useEffect } from "react";
-import Image from "next/legacy/image";
-import Link from "next/link";
-import { FaInstagram, FaGithubAlt, FaLinkedin } from "react-icons/fa";
-import AOS from "aos";
-import "aos/dist/aos.css";
-import type CardTeamProps from "@/data/interfaces/props/card-team";
+'use client';
+import { useEffect } from 'react';
+import Image from 'next/legacy/image';
+import Link from 'next/link';
+import { FaInstagram, FaGithubAlt, FaLinkedin } from 'react-icons/fa';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+import type CardTeamProps from '@/data/interfaces/props/card-team';
 
 export default function CardTeam({
   name,
@@ -13,11 +13,11 @@ export default function CardTeam({
   github,
   image,
   instagram,
-  linkedin,
+  linkedin
 }: CardTeamProps) {
   useEffect(() => {
     AOS.init({
-      duration: 800,
+      duration: 800
     });
   }, []);
   return (

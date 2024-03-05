@@ -1,7 +1,7 @@
-"use client";
+'use client';
 
-import Link from "next/link";
-import React from "react";
+import Link from 'next/link';
+import React from 'react';
 
 export default function NotFound(): React.JSX.Element {
   return (

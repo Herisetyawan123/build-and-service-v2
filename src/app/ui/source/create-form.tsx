@@ -1,23 +1,23 @@
-"use client";
+'use client';
 // import { CustomerField } from '@/app/lib/definitions';
-import Link from "next/link";
-import { ToastContainer } from "react-toastify";
+import Link from 'next/link';
+import { ToastContainer } from 'react-toastify';
 import {
   CheckIcon,
   ClockIcon,
   CurrencyDollarIcon,
   DocumentTextIcon,
   CodeBracketSquareIcon,
-  BriefcaseIcon,
-} from "@heroicons/react/24/outline";
-import { Button } from "@/app/ui/button";
+  BriefcaseIcon
+} from '@heroicons/react/24/outline';
+import { Button } from '@/app/ui/button';
 // import { createInvoice } from '@/app/lib/actions';
-import "react-toastify/dist/ReactToastify.css";
-import React from "react";
-import { type Metadata } from "next";
+import 'react-toastify/dist/ReactToastify.css';
+import React from 'react';
+import { type Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: "Create Source",
+  title: 'Create Source'
 };
 
 export default function Form() {

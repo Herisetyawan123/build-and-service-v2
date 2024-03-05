@@ -1,16 +1,16 @@
-import type { Metadata } from "next";
-import { Poppins } from "next/font/google";
-import SideNav from "@/app/ui/dashboard/sidebar";
-import React from "react";
+import type { Metadata } from 'next';
+import { Poppins } from 'next/font/google';
+import SideNav from '@/app/ui/dashboard/sidebar';
+import React from 'react';
 
 interface ProtectedLayoutProps {
   children: React.ReactNode | React.ReactNode[];
 }
 
-const poppins = Poppins({ subsets: ["latin"], weight: "400" });
+const poppins = Poppins({ subsets: ['latin'], weight: '400' });
 export const metadata: Metadata = {
-  title: "Dashboard",
-  description: "Dashboard Build and Service",
+  title: 'Dashboard',
+  description: 'Dashboard Build and Service'
 };
 
 const Layout = async ({ children }: ProtectedLayoutProps) => {
