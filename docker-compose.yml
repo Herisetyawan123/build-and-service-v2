@@ -1,0 +1,17 @@
+version: '3.5'
+
+services:
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: build-and-service
+    ports:
+      - "3000:3000"
+    volumes:
+      - .:/app
+      - /app/node_modules
+      - /app/.next
+    environment:
+      - NEXTAUTH_SECRET=jhhfu6cr76t67c
+      - NEXTAUTH_URL=https://localhost:3000
