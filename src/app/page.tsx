@@ -15,9 +15,11 @@ import Abstrak from '@/assets/bg/abstrak.svg';
 import ContactUs from '@/components/sections/contact-us';
 import faqAccordion from '@/data/static/faq-accordion';
 import cardMarquee from '@/data/static/card-marquee';
-import CardMarquee from '@/components/cards/card-marquee';
+import CardMarquee from "@/components/cards/card-marquee";
 
 export default function Home() {
+
+
   useEffect(() => {
     AOS.init({
       duration: 800
