@@ -1,10 +1,4 @@
-export default async function SourceTable({
-  query,
-  currentPage,
-}: {
-  query: string;
-  currentPage: number;
-}) {
+export default async function SourceTable() {
   //   const sources = await fetchFilteredSource(query, currentPage);
 
   return (
