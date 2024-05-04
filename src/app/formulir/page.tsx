@@ -9,6 +9,7 @@ import InputSelect from '@/components/form-input/input-select';
 import InputTextArea from '@/components/form-input/input-textarea';
 import InputFile from '@/components/form-input/input-file';
 import Footer from '@/components/footer';
+import Link from 'next/link';
 
 export default function Formulir() {
   useEffect(() => {
@@ -20,6 +21,19 @@ export default function Formulir() {
     <React.Fragment>
       <Navbar />
       <main className="w-full mt-20" data-aos="zoom-in">
+        <section className="border border-red-500 rounded p-4 w-[90%] sm:max-w-4xl mx-auto animate-pulse">
+          <h6 className="text-red-500 text-justify">
+            Fitur Request Project masih dalam tahap development. Untuk
+            Konsultasi kunjungi Instagram kami{' '}
+            <Link
+              href={'https://instagram.com/buildandservice.ltd'}
+              className="hover:text-red-900 font-bold"
+              target="_blank"
+            >
+              @buildandservice.ltd
+            </Link>
+          </h6>
+        </section>
         <div className="w-[90%] sm:max-w-6xl mx-auto py-10">
           <section className="header-content-formulir">
             <h1 className="text-center text-3xl font-bold">

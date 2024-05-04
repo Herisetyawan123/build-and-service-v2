@@ -16,6 +16,7 @@ import ContactUs from '@/components/sections/contact-us';
 import faqAccordion from '@/data/static/faq-accordion';
 import cardMarquee from '@/data/static/card-marquee';
 import CardMarquee from '@/components/cards/card-marquee';
+import Link from 'next/link';
 
 export default function Home() {
   useEffect(() => {
@@ -27,6 +28,19 @@ export default function Home() {
     <React.Fragment>
       <Navbar />
       <main className="pb-28 mt-20">
+        <section className="border border-red-500 rounded p-4 w-[90%] sm:max-w-6xl mx-auto animate-pulse">
+          <h6 className="text-red-500 text-justify">
+            Dikarenakan Banyaknya Client, Website Official Build and Service
+            belum sempat diselesaikan. Untuk Konsultasi kunjungi Instagram kami{' '}
+            <Link
+              href={'https://instagram.com/buildandservice.ltd'}
+              className="hover:text-red-900 font-bold"
+              target="_blank"
+            >
+              @buildandservice.ltd
+            </Link>
+          </h6>
+        </section>
         <section
           className="mb-20 w-[90%] sm:max-w-6xl mx-auto py-10"
           data-aos="fade-up"
@@ -39,19 +53,22 @@ export default function Home() {
           </h1>
           <div className="flex gap-x-3 flex-wrap mt-10 gap-y-10 justify-center sm:justify-start">
             <CardSource
-              title="Source E-commerce fullstack javascript"
+              image="https://buildwithangga.com/storage/assets/thumbnails/bwafl.jpeg"
+              title="E-commerce Website Apps"
               link="/"
-              price="500.000"
+              price="3.000.000"
             />
             <CardSource
-              title="Source E-commerce fullstack javascript"
+              image="https://buildwithangga.com/storage/assets/thumbnails/ghlm5935-kelas%20ios%20engineer%20swift%20ui%20buildwith%20angga%20(1).png"
+              title="Point of Sales Application"
               link="/"
-              price="500.000"
+              price="4.000.000"
             />
             <CardSource
-              title="Source E-commerce fullstack javascript"
+              image="https://buildwithangga.com/storage/assets/thumbnails/thumbnail%20kelas%20full%20stack%20laravel%20flutter%20foodmarket%20buildwith%20angga.png"
+              title="Mobile Apps"
               link="/"
-              price="500.000"
+              price="3.000.000"
             />
             {/* <CardSource title='Source E-commerce fullstack javascript' link='/' price='500.000' /> */}
           </div>

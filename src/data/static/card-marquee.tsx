@@ -25,9 +25,19 @@ const cardMarquee: ListCardMarquee = {
       description: 'Mobile Development'
     },
     {
-      image: 'https://buildwithangga.com/themes/front/images/logo/flutter.svg',
-      name: 'Flutter',
-      description: 'Mobile Development'
+      image: 'https://buildwithangga.com/themes/front/images/logo/golang.svg',
+      name: 'Golang',
+      description: 'Backend Development'
+    },
+    {
+      image: 'https://buildwithangga.com/themes/front/images/logo/react.svg',
+      name: 'React JS',
+      description: 'Frontend Development'
+    },
+    {
+      image: 'https://cdn.worldvectorlogo.com/logos/nextjs-13.svg',
+      name: 'Next JS',
+      description: 'Fullstack Development'
     }
   ],
   item2: [
@@ -54,9 +64,19 @@ const cardMarquee: ListCardMarquee = {
       description: 'Mobile Development'
     },
     {
-      image: 'https://buildwithangga.com/themes/front/images/logo/flutter.svg',
-      name: 'Flutter',
-      description: 'Mobile Development'
+      image: 'https://buildwithangga.com/themes/front/images/logo/golang.svg',
+      name: 'Golang',
+      description: 'Backend Development'
+    },
+    {
+      image: 'https://buildwithangga.com/themes/front/images/logo/react.svg',
+      name: 'React JS',
+      description: 'Frontend Development'
+    },
+    {
+      image: 'https://cdn.worldvectorlogo.com/logos/nextjs-13.svg',
+      name: 'Next JS',
+      description: 'Fullstack Development'
     }
   ]
 };

@@ -75,7 +75,7 @@ export default function Navbar() {
           style={{
             transformOrigin: '100% 50%'
           }}
-          className={`${!open ? 'scale-x-0 opacity-0' : 'scale-x-1 opacity-100'} backdrop-blur-sm bg-white/90  py-10 w-full transition-all duration-500 border-b `}
+          className={`${!open ? 'scale-x-0 opacity-0 hidden' : 'scale-x-1 opacity-100'} backdrop-blur-sm bg-white/90  py-10 w-full transition-all duration-500 border-b `}
         >
           <div className="flex flex-col items-start gap-y-4 w-[90%] sm:max-w-6xl mx-auto ">
             <div>

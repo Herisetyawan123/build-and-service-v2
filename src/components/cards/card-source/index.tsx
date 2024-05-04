@@ -3,12 +3,12 @@ import Image from 'next/legacy/image';
 import { FaCartArrowDown } from 'react-icons/fa';
 import type CardSourceProps from '@/data/interfaces/props/card-source';
 
-const CardSource = ({ title, price, link }: CardSourceProps) => {
+const CardSource = ({ title, price, link, image }: CardSourceProps) => {
   return (
     <div className="bg-white p-8 rounded-lg w-[22rem] hover:shadow-xl transition-all duration-300 group">
       <div className="w-full h-40 bg-blue-200 rounded-lg relative overflow-hidden">
         <Image
-          src="https://buildwithangga.com/themes/front/images/thumbnail/thumbnail_roadmap-2.webp"
+          src={image}
           className="w-full h-full object-cover group-hover:scale-110 transition-all duration-300"
           alt=""
           layout="fill"
@@ -27,6 +27,9 @@ const CardSource = ({ title, price, link }: CardSourceProps) => {
         </h2>
 
         <div className="mt-5">
+          <h6 className="text-sm font-normal text-slate-300">Start From:</h6>
+        </div>
+        <div className="mt-0">
           <h4 className="text-lg font-normal text-slate-500">Rp. {price},-</h4>
         </div>
 
