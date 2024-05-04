@@ -7,21 +7,21 @@
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://buildandservice.tech/services</loc>
+    <loc>https://buildandservice.tech/service</loc>
     <lastmod>2024-05-02</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://buildandservice.tech/about</loc>
+    <loc>https://buildandservice.tech/team</loc>
     <lastmod>2024-04-30</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://buildandservice.tech/contact</loc>
+    <loc>https://buildandservice.tech/formulir</loc>
     <lastmod>2024-05-01</lastmod>
-    <changefreq>monthly</changefreq>
+    <changefreq>never</changefreq>
     <priority>0.6</priority>
   </url>
 </urlset>
