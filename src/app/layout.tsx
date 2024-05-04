@@ -1,13 +1,12 @@
 import type { Metadata } from 'next';
 import { Poppins } from 'next/font/google';
 import './globals.css';
-import Provider from './ui/providers';
 
 const poppins = Poppins({ subsets: ['latin'], weight: '400' });
 
 export const metadata: Metadata = {
   title: 'Build and Service',
-  description: 'Build and Service adalah mitra teknologi yang menyediakan solusi perangkat lunak inovatif untuk membangun dan mengoptimalkan bisnis Anda. Dari pengembangan perangkat lunak kustom hingga integrasi sistem yang canggih, kami mempersembahkan solusi yang menghadirkan nilai tambah bagi perusahaan Anda. Temukan potensi penuh bisnis Anda dengan Build and Service',
+  description: 'Build and Service adalah mitra teknologi yang menyediakan solusi perangkat lunak inovatif untuk membangun dan mengoptimalkan bisnis Anda. Dari pengembangan perangkat lunak kustom hingga integrasi sistem yang canggih, kami memberikan solusi bernilai tambah bagi perusahaan Anda. Temukan potensi penuh bisnis Anda dengan Build and Service.',
   icons: '/favicon.ico',
   authors: [
     {
