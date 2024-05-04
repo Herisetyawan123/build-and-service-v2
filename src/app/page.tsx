@@ -88,7 +88,7 @@ export default function Home() {
                 Our Service
               </h1>
             </div>
-            <div className="mt-5 flex flex-wrap sm:justify-center sm:flex-row sm:gap-x-5 flex-col gap-y-5">
+            <div className="mt-5 flex flex-wrap sm:justify-center sm:flex-row sm:gap-x-5 flex-col items-center gap-y-5">
               <CardService image={WebDesign} title="Web Developer" />
               <CardService image={Mobile} title="Android Developer" />
               <CardService image={Source} title="Source Coding" />
