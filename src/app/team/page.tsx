@@ -28,7 +28,7 @@ export default function Team() {
               fixing it.
             </h1>
           </section>
-          <section className="mt-10 lg:w-full flex sm:gap-x-10 flex-col sm:flex-row gap-y-10 text-center">
+          <section className="mt-10 lg:w-full flex sm:gap-x-10 flex-col sm:flex-row gap-y-10 text-center flex-wrap">
             {teamData.map((item, index) => (
               <CardTeam
                 key={index}

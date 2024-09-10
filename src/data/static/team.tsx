@@ -3,6 +3,7 @@ import Rafi from '@/assets/profile-teams/rafi.png';
 import Perdana from '@/assets/profile-teams/perdana.jpeg';
 import Heri from '@/assets/profile-teams/heri.jpg';
 import Faisal from '@/assets/profile-teams/faisal.jpg';
+import Anhar from '@/assets/profile-teams/anhar.jpg';
 
 const teamData: CardTeamProps[] = [
   {
@@ -39,6 +40,14 @@ const teamData: CardTeamProps[] = [
     instagram: 'https://www.instagram.com/faisallbhr',
     github: 'https://www.github.com/faisallbhr',
     linkedin: 'https://www.linkedin.com/in/faisallbhr'
+  },
+  {
+    name: 'Anhar Lagi Sebel',
+    description: "I can't do anything",
+    image: Anhar,
+    instagram: 'https://www.instagram.com/anhar_hampir_dapat/',
+    github: 'https://www.github.com/anharsaja',
+    linkedin: 'https://www.linkedin.com/in/'
   }
 ];
 export default teamData;
