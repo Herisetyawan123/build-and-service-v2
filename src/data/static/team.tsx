@@ -42,8 +42,8 @@ const teamData: CardTeamProps[] = [
     linkedin: 'https://www.linkedin.com/in/faisallbhr'
   },
   {
-    name: 'Anhar Lagi Sebel',
-    description: "I can't do anything",
+    name: 'Anhar S.kom',
+    description: "I'm a Fullstack Developer in website and punk man",
     image: Anhar,
     instagram: 'https://www.instagram.com/anhar_hampir_dapat/',
     github: 'https://www.github.com/anharsaja',
