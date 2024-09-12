@@ -7,6 +7,14 @@ import Anhar from '@/assets/profile-teams/anhar.jpg';
 
 const teamData: CardTeamProps[] = [
   {
+    name: 'Anhar S.kom',
+    description: "I'm a Fullstack Developer in website and punk man",
+    image: Anhar,
+    instagram: 'https://www.instagram.com/anhar_hampir_dapat/',
+    github: 'https://www.github.com/anharsaja',
+    linkedin: 'https://www.linkedin.com/in/'
+  },
+  {
     name: 'Perdana Putro H',
     description:
       "I'm a Fullstack Web Developer and Mobile Developer with Flutter",
@@ -40,14 +48,6 @@ const teamData: CardTeamProps[] = [
     instagram: 'https://www.instagram.com/faisallbhr',
     github: 'https://www.github.com/faisallbhr',
     linkedin: 'https://www.linkedin.com/in/faisallbhr'
-  },
-  {
-    name: 'Anhar S.kom',
-    description: "I'm a Fullstack Developer in website and punk man",
-    image: Anhar,
-    instagram: 'https://www.instagram.com/anhar_hampir_dapat/',
-    github: 'https://www.github.com/anharsaja',
-    linkedin: 'https://www.linkedin.com/in/'
   }
 ];
 export default teamData;
