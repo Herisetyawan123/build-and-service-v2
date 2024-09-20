@@ -7,7 +7,7 @@ import Anhar from '@/assets/profile-teams/anhar.jpg';
 
 const teamData: CardTeamProps[] = [
   {
-    name: 'Anhar S.kom',
+    name: 'Anhar Sandova',
     description: "I'm a Fullstack Developer in website and punk man",
     image: Anhar,
     instagram: 'https://www.instagram.com/anhar_hampir_dapat/',
