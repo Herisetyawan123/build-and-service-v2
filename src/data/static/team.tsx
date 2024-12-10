@@ -4,14 +4,23 @@ import Perdana from '@/assets/profile-teams/perdana.jpeg';
 import Heri from '@/assets/profile-teams/heri.jpg';
 import Faisal from '@/assets/profile-teams/faisal.jpg';
 import Anhar from '@/assets/profile-teams/anhar.jpg';
+import Danu from '@/assets/profile-teams/danu.jpeg';
 
 const teamData: CardTeamProps[] = [
   {
     name: 'Anhar Sandova',
     description: "I'm a Fullstack Developer in website and punk man",
     image: Anhar,
-    instagram: 'https://www.instagram.com/anhar_hampir_dapat/',
+    instagram: 'https://www.instagram.com/anhahahar/',
     github: 'https://www.github.com/anharsaja',
+    linkedin: 'https://www.linkedin.com/in/'
+  },
+  {
+    name: 'Danu Satoru',
+    description: "I'm a Quality Assurance and Project Manager ",
+    image: Danu,
+    instagram: 'https://www.instagram.com/danuadiwidya_/',
+    github: 'https://www.github.com/Danuadiwidya',
     linkedin: 'https://www.linkedin.com/in/'
   },
   {
